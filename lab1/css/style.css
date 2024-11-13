@@ -1,0 +1,118 @@
+/* Подключение шрифта */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./fonts/front.ttf') format('truetype'); /* относительный путь к файлу */
+    font-weight: normal;
+    font-style: normal;
+}
+* 
+body {
+        background-color: #F4F4F4;
+        font-family: "Times New Roman", serif;
+        line-height: 20px;
+	font-size: 14;
+        }
+h1 { 	    font-family: 'CustomFont', sans-serif;
+            text-align: center;
+            font-size: 24;	
+	}
+h2 {font-size: 18px;
+    font-family: 'CustomFont', sans-serif;}
+
+h3 {font-size: 18px;
+    font-family: 'CustomFont', sans-serif;}
+h4 {font-size: 18px;
+    font-family: 'CustomFont', sans-serif;}
+
+
+	        
+p {
+	text-align: justify;  
+	text-indent: 20px;
+	}
+table {    
+   	margin: 1em auto;
+   	border-collapse: collapse;
+    	font-family: Times new roman, Helvetica, sans-serif;
+	width: 80%;  
+	}
+ ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+ul li {
+            margin-bottom: 10px; 
+        }
+ul li img {
+            width: 40px; 
+            height: auto; 
+            vertical-align: middle; 
+            margin-right: 10px; 
+        }
+pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .keyword {
+            color: #c678dd; 
+        }
+        .function {
+            color: #61afef; 
+        }
+        .string {
+            color: #98c379; 
+        }
+        .number {
+            color: #d19a66;
+        }
+ #unique-image {
+            float: left; 
+            width: 20%; 
+            margin-right: 10px; 
+        }
+ #unique-image2 {
+            float: center; 
+            width: 20%; 
+        }
+
+table.t1 {
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .t1 th, .t1 td {
+    padding: 4px 8px;
+  }
+  .t1 thead th {
+    background: grey;
+    text-transform: lowercase;
+    text-align: left;
+    font-size: 15px;
+color: #fff;
+    }
+  .t1 tr {
+    border-right: 1px solid grey;
+  }
+  .t1 tbody tr {
+    border-bottom: 1px solid grey;
+  }
+  .t1 tbody tr:nth-child(odd) {
+    background: #dbe5f0;
+  }
+  .t1 tbody th, .t1 tbody tr:nth-child(even) td {
+    border-right: 1px solid #95b3d7;
+  }
+  .t1 tfoot th {
+    background: grey;
+    text-align: center;
+    font-weight: normal;
+    font-size: 10px;
+    color: #fff;
+  }
+  .t1 tr *:nth-child(3), .t1 tr *:nth-child(4) {
+    text-align: justify;
+  }
+
