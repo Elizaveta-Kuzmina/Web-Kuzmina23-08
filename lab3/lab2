@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+    <title>Заявка на ремонт ноутбука</title>
+   
+<body>
+
+<h1>Заявка на ремонт ноутбука</h1>
+
+<form action="/submit" method="POST">
+    <div class="form-group desktop-only">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group mobile-only">
+        <input type="text" id="name" name="name" placeholder="Ваше имя:" required>
+    </div>
+
+    <div class="form-group desktop-only">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group mobile-only">
+        <input type="email" id="email" name="email" placeholder="Email:" required>
+    </div>
+
+    <div class="form-group desktop-only">
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group mobile-only">
+        <input type="tel" id="phone" name="phone" placeholder="Телефон:" required>
+    </div>
+
+    <div class="form-group desktop-only">
+        <label for="device">Модель устройства:</label>
+        <input type="text" id="device" name="device" required>
+    </div>
+    <div class="form-group mobile-only">
+        <input type="text" id="device" name="device" placeholder="Модель устройства:" required>
+    </div>
+
+    <div class="form-group desktop-only">
+        <label for="issue">Описание проблемы:</label>
+        <textarea id="issue" name="issue" rows="4" required></textarea>
+    </div>
+    <div class="form-group mobile-only">
+        <textarea id="issue" name="issue" rows="4" placeholder="Описание проблемы:" required></textarea>
+    </div>
+
+    <div class="form-group desktop-only">
+        <label for="urgency">Срочность ремонта:</label>
+        <select id="urgency" name="urgency" required>
+            <option value="">Выберите срочность</option>
+            <option value="high">Высокая</option>
+            <option value="medium">Средняя</option>
+            <option value="low">Низкая</option>
+        </select>
+    </div>
+    <div class="form-group mobile-only">
+        <select id="urgency" name="urgency" required>
+            <option value="">Срочность:</option>
+            <option value="high">Высокая</option>
+            <option value="medium">Средняя</option>
+            <option value="low">Низкая</option>
+        </select>
+    </div>
+
+    <button type="submit">Отправить заявку</button>
+
+</form>
+
+</body>
+</html>
