@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма заявки на ремонт ноутбука</title>
+<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<form>
+
+<div class="form-group">
+<label for="name" class="label">Ваше имя:</label>
+<input type="text" id="name" name="name" class="input" placeholder="Введите ваше имя" required>
+</div>
+
+
+<div class="form-group">
+<label for="phone" class="label">Телефон:</label>
+<input type="tel" id="phone" name="phone" class="input" placeholder="+7 (999) 999-99-99" required>
+</div>
+
+
+<div class="form-group">
+<label for="email" class="label">Email:</label>
+<input type="email" id="email" name="email" class="input" placeholder="example@mail.ru">
+</div>
+
+
+<div class="form-group">
+<label for="model" class="label">Модель ноутбука:</label>
+<select id="model" name="model" class="select">
+<option value="" disabled selected>Выберите модель</option>
+<option value="asus">Asus</option>
+<option value="hp">HP</option>
+<option value="lenovo">Lenovo</option>
+<option value="honor">Honor</option>
+<option value="acer">Acer</option>
+<option value="mac_book">MacBook</option>
+<option value="other">Другая</option>
+</select>
+</div>
+
+
+<div class="form-group">
+<label for="issue" class="label">Описание проблемы:</label>
+<textarea id="issue" name="issue" class="textarea" placeholder="Кратко опишите проблему" rows="4"></textarea>
+</div>
+
+<div class="form-group">
+<label for="time" class="label">Удобное время для звонка:</label>
+<input type="time" id="time" name="time" class="input">
+</div>
+
+
+<div class="form-group">
+<label class="checkbox-label">
+<input type="checkbox" name="agreement" class="checkbox" required>
+Согласен с условиями обработки данных
+</label>
+</div>
+
+
+<div class="form-group">
+<button type="submit" class="button">Отправить заявку</button>
+</div>
+</form>
+</body>
+</html>
