@@ -21,10 +21,7 @@ h2 {font-size: 18px;
 h3 {font-size: 18px;
     font-family: 'CustomFont', sans-serif;}
 h4 {font-size: 18px;
-    font-family: 'CustomFont', sans-serif;}
-
-
-	        
+    font-family: 'CustomFont', sans-serif;}	        
 p {
 	text-align: justify;  
 	text-indent: 20px;
@@ -66,15 +63,6 @@ pre {
         }
         .number {
             color: #d19a66;
-        }
- #unique-image {
-            float: left; 
-            width: 20%; 
-            margin-right: 10px; 
-        }
- #unique-image2 {
-            float: center; 
-            width: 20%; 
         }
 
 table.t1 {
