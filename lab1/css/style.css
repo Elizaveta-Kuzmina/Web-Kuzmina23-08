@@ -1,4 +1,3 @@
-/* Подключение шрифта */
 @font-face {
     font-family: 'CustomFont';
     src: url('./fonts/front.ttf') format('truetype'); /* относительный путь к файлу */
