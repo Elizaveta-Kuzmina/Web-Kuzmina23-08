@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+	}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+}
+
+
+.vase {
+  position: relative;
+  width: 100px;
+  height: 150px;
+  margin: 0 10px;
+}
+
+.vase .neck {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  height: 30px;
+  background: #1e90ff;
+  transform: translateX(-50%);
+   border-radius: 10px;
+}
+
+.vase .body {
+  position: absolute;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+  background: #1e90ff;
+  border-radius: 50%;
+ 
+	}
+
+.vase .base {
+  position: absolute;
+ top: 115px;
+ bottom: 0;
+  width: 70%;
+  height: 20px;
+  background: #1e90ff;
+  left: 15%;
+  border-radius: 10px;
+}
+
+.flower {
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flower .stem {
+  width: 3px;
+  height: 90px;
+  background: green;
+}
+
+.flower .petal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: pink;
+  border-radius: 50%;
+}
+
+.flower .petal1 {
+  transform: rotate(0deg) translate(10px);
+
+}
+
+.flower .petal2 {
+  transform: rotate(72deg) translate(10px);
+
+}
+
+.flower .petal3 {
+  transform: rotate(144deg) translate(10px);
+}
+
+.flower .petal4 {
+  transform: rotate(216deg) translate(10px);
+}
+
+.flower .petal5 {
+  transform: rotate(288deg) translate(10px);
+}
+
+.flower .center {
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+}
+
+
+.flower2 {
+bottom: 95px;
+  left: 75px;
+ transform: rotate(10deg) translate(5px);
+}
+
+
+
+.flower3 {
+bottom: 95px;
+  left: 0px;
+ transform: rotate(345deg) translate(32px);
+}
+
+
