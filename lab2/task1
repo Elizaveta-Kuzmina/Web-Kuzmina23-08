@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Цифра 71</title>
+
+</head>
+<body>
+<div class="container">
+<!— Цифра 7 —>
+<div class="number">
+<div class="row">
+<div class="block"></div>
+<div class="block"></div>
+<div class="block"></div>
+
+
+</div>
+
+<div class="row">
+<div class="block"></div>
+</div>
+<div class="row">
+
+<div class="block"></div>
+</div>
+<div class="row">
+
+<div class="block"></div>
+</div>
+</div>
+
+<!— Цифра 1 —>
+<div class="number">
+<div class="row">
+
+<div class="block"></div>
+</div>
+<div class="row">
+
+<div class="block"></div>
+</div>
+<div class="row">
+
+<div class="block"></div>
+</div>
+<div class="row">
+<div class="block"></div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
