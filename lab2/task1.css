@@ -1,0 +1,29 @@
+
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+.container {
+display: flex;
+gap: 60px; /* Расстояние между цифрами */
+}
+
+.number {
+display: flex;
+flex-direction: column;
+}
+.row {
+display: flex;
+justify-content: right;
+
+}
+.block {
+width: 50px; /* Ширина блока */
+height: 50px; /* Высота блока */
+background-color: blue; /* Цвет блоков */
+}
+
