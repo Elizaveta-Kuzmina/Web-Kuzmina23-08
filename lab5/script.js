@@ -1,4 +1,4 @@
-//резка прямоугольника
+//задание 1
 function calculateCuts() {
 
 let n = parseInt(document.getElementById('length').value);
@@ -23,7 +23,7 @@ cuts++;
 document.getElementById('result').innerText = `Количество отрезаний: ${cuts}`;
 }
 
-//массивы
+//задание 2а
 function calculateProduct() {
 const input = document.getElementById("arrayInput").value;
 const arr = input.split(',').map(Number); 
@@ -54,8 +54,50 @@ product *= arr[i];
 document.getElementById("result2").innerText = `Произведение элементов: ${product}`;
 }
 
-//панграмма
 
+
+//задание 2Б
+function isDescendingGeometricProgression(num) {
+const digits = String(num).split('').map(Number); 
+if (digits.length < 2) return false; 
+const ratio = digits[0] / digits[1]; 
+for (let i = 1; i < digits.length - 1; i++) {
+if (digits[i] / digits[i + 1] !== ratio) return false;
+}
+return true;
+}
+
+
+function filterArray(arr) {
+return arr.filter(item => {
+const intPart = Math.floor(Math.abs(item)); 
+return !isDescendingGeometricProgression(intPart); 
+});
+}
+
+
+document.getElementById('filter-button').addEventListener('click', () => {
+ 
+const input = document.getElementById('array-input').value;
+
+
+const array = input.split(',').map(item => parseFloat(item.trim()));
+
+
+if (array.some(isNaN)) {
+alert('Пожалуйста, введите массив чисел через запятую!');
+return;
+}
+
+
+const filteredArray = filterArray(array);
+
+
+document.getElementById('original-array').textContent = array.join(', ');
+document.getElementById('filtered-array').textContent = filteredArray.join(', ');
+});
+
+//задание 4
 function isPangram(sentence) {
 const russianAlphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'; // Все буквы русского алфавита
 const normalizedSentence = sentence.toLowerCase().replace(/[^а-яё]/g, ''); // Приводим к нижнему регистру и удаляем всё, кроме букв
