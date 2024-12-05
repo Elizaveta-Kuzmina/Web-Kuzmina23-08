@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333; 
+    margin: 0;
+    padding: 50;
+    line-height: 1.6;
+}
+
+
+
+header {
+    background-color: #e63946; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #333333; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff; 
+    border: 1px solid #cccccc; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+width: 30%;
+
+}
+
+form input, form button {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+form input:focus {
+    border-color: #e63946; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
+}
+
+form button {
+    background-color: #333333; 
+    color: #ffffff; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #e63946; 
+    transform: scale(1.02);
+}
+
+
+a {
+    color: #e63946; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333333; 
+    text-decoration: underline;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.message.success {
+    background-color: #eaf6ec; 
+    color: #27ae60; 
+    border: 1px solid #c9e7cb;
+}
+
+.message.error {
+    background-color: #fbe9e9; 
+    color: #c0392b; 
+    border: 1px solid #f5c6cb;
+}
+
+
+.article {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.article h2 {
+    font-size: 1.8rem;
+    color: #333333;
+}
+
+.article p {
+    margin: 10px 0;
+}
+
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #333333; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-link:hover {
+    background-color: #e63946; 
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 0;
+    background: #333333; 
+    color: #ffffff; 
+    font-size: 0.9rem;
+}
