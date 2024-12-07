@@ -26,8 +26,8 @@ small{text-indent:15px}
 <p style="text-indent: 50px;">
   <?php if ($isLoggedIn): ?>
     <p align=left>Вы вошли как: <strong><?= htmlspecialchars($_SESSION['username']) ?></strong></p>
- <p align=left><a href="profile_edit.php">Посмотреть данные</a></p>
-    <p align=left><a href="profile.php">Изменить данные</a></p>
+ <p align=left><a href="profile.php">Посмотреть данные</a></p>
+    <p align=left><a href="profile_edit.php">Изменить данные</a></p>
 
     <?php if ($isAdmin): ?>
         <p><a href="admin.php">Админ-панель</a></p>
