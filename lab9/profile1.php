@@ -39,7 +39,7 @@ if (!$user) {
         <p><strong>Роль:</strong> <?= $user['role'] === 'admin' ? 'Администратор' : 'Пользователь'; ?></p>
         <p><strong>Дата регистрации:</strong> <?= htmlspecialchars($user['created_at']); ?></p>
 
-        <a class="edit-link" href="profile.php">Редактировать профиль</a>
+        <a class="edit-link" href="profile_edit.php">Редактировать профиль</a>
         <p><a href="main.php">Назад</a></p>
     </div>
     <footer>
