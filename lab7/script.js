@@ -3,11 +3,10 @@ let currentOperator = null;
 let previousValue = null;
 
 function inputNumber(num) {
-if (currentInput === '0' && num === '.') {
-currentInput = '0.';
-} else {
-currentInput += num;
+if (num === '.' && currentInput.includes('.')) {
+return;
 }
+currentInput += num;
 updateDisplay();
 }
 
