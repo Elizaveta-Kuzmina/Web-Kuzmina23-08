@@ -34,9 +34,9 @@ if (isset($_GET['delete_id'])) {
     <header>
         <h1>Админ-панель: управление пользователями</h1>
     </header>
-    <div class="container">
-        <a href="admin_add_user.php" class="add-link">Добавить пользователя</a>
-        <h2>Список пользователей</h2>
+    
+       
+     <center>   <h2 style= "text-indent: 20px">Список пользователей</h2></center>
         <table>
             <thead>
                 <tr>
@@ -63,9 +63,9 @@ if (isset($_GET['delete_id'])) {
                     </tr>
                 <?php endforeach; ?>
             </tbody>
-        </table> <br>
-        <a href="main.php">На главную</a>
-    </div>
-   
+        </table> 
+ <a href="admin_add_user.php" class="add-link" style="text-indent: 20px">Добавить пользователя</a>
+        <a href="main.php" style= "text-indent: 20px">На главную</a>
+    
 </body>
 </html>
