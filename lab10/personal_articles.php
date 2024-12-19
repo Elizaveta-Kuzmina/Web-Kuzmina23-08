@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 
-$stmt = $pdo->prepare("SELECT id, title, content, created_at FROM articles WHERE author_id = :author_id ORDER BY created_at DESC");
+$stmt = $pdo->prepare("SELECT id, title, content, created_at, image FROM articles WHERE author_id = :author_id ORDER BY created_at DESC");
 $stmt->execute(['author_id' => $_SESSION['user_id']]);
 $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -27,13 +27,19 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
 <?php if (count($articles) > 0): ?>
     <?php foreach ($articles as $article): ?>
-        <div class="article">
-            <h2><?= htmlspecialchars($article['title']) ?></h2>
-            <p><?= nl2br(htmlspecialchars($article['content'])) ?></p>
-            <p style="font-size: 12px;">Опубликовано: <?= $article['created_at'] ?></p>
+    <div class="article">
+        <h2><?= htmlspecialchars($article['title']) ?></h2>
+         <?php if (!empty($article['image'])): ?>
+        <img src="<?= htmlspecialchars($article['image']) ?>" alt="Изображение статьи" style="width: 300px; height: 200px; margin-bottom: 15px; float: right; margin: 15px;">
+
+        <?php endif; ?>
+        <p><?= nl2br(htmlspecialchars($article['content'])) ?></p>
+        <p style="font-size: 0.8rem; color: #888;">Опубликовано: <?= $article['created_at'] ?></p>
+<hr>
+
   <form method="GET" action="edit_article.php" style="display:inline;">
             <input type="hidden" name="id" value="<?= $article['id'] ?>">
-            <button type="submit" style="background-color: #770000; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">
+            <button type="submit">
                 Редактировать
             </button>
         </form>
