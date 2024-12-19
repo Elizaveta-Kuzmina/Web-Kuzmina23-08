@@ -17,6 +17,7 @@ CREATE TABLE articles (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE CASCADE
 );
+ALTER TABLE articles ADD COLUMN image VARCHAR(255) DEFAULT NULL;
 
 
 INSERT INTO users (username, password, email, role) 
@@ -33,3 +34,13 @@ SELECT a.title, a.content, u.username AS author, a.created_at
 FROM articles a 
 JOIN users u ON a.author_id = u.id 
 ORDER BY a.created_at DESC;
+
+CREATE TABLE comments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    article_id INT NOT NULL,
+    user_id INT NOT NULL,
+    comment TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (article_id) REFERENCES articles(id) ON DELETE CASCADE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
