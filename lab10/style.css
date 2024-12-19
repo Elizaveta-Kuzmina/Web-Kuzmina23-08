@@ -5,13 +5,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-height: 100%; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
 
 }
-
-
 
 header {
     background-color: #8B0000; 
@@ -63,24 +61,27 @@ form input, form button {
     border-radius: 5px;
     box-sizing: border-box;
     transition: all 0.3s ease;
-}
 
-form input:focus {
-    border-color: #e63946; 
-    outline: none;
-    box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
 }
-
 form button {
-    background-color: #333333; 
+    background-color: #770000; 
     color: #ffffff; 
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+
+form input:focus {
+    border-color: #770000; 
+    outline: none;
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.3);
+}
+
+
+
 form button:hover {
-    background-color: #e63946; 
+    background-color: #3D3D3D; 
     transform: scale(1.02);
 }
 
@@ -127,7 +128,7 @@ a:hover {
     background-color: #f6f6f6; 
 }
 
-.article h2 {
+.article h2, h3 {
     text-align: center; 
 }
 
@@ -135,6 +136,7 @@ a:hover {
     text-align: justify; 
     line-height: 1.6; 
 }
+
 .back-link {
     display: inline-block;
     margin-top: 20px;
@@ -162,7 +164,7 @@ footer {
     font-size: 0.9rem;
     border-top: 1px solid #444444; 
 }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     header h1 {
         font-size: 2rem; 
     }
@@ -174,53 +176,7 @@ footer {
     footer {
         font-size: 0.8rem; 
     }
-}
-
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem; 
-    }
-
-    .container {
-        padding: 5px; 
-    }
-
-    form input, form button {
-        font-size: 0.9rem; 
-        padding: 8px; 
-    }
-
-    footer {
-        font-size: 0.7rem; 
-        padding: 10px; 
-    }
-} 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 1rem;
-    background-color: #ffffff; 
-    border: 1px solid #ddd; 
-}
-
-table th, table td {
-    text-align: left;
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-table th {
-    background-color: #8B0000; 
-    color: #ffffff; 
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
+ table, thead, tbody, th, td, tr {
         display: block; 
     }
 
@@ -250,9 +206,29 @@ table th {
     table th {
         display: none; 
     }
+
 }
+
+
 @media (max-width: 480px) {
-    table, thead, tbody, th, td, tr {
+    header h1 {
+        font-size: 1.5rem; 
+    }
+
+    .container {
+        padding: 5px; 
+    }
+
+    form input, form button {
+        font-size: 0.9rem; 
+        padding: 8px; 
+    }
+
+    footer {
+        font-size: 0.7rem; 
+        padding: 10px; 
+    }
+table, thead, tbody, th, td, tr {
         display: block; 
     }
 
@@ -285,4 +261,134 @@ table th {
     table td:last-child {
         text-align: center; 
     }
+
+} 
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #8B0000; 
+    color: #ffffff; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.menu {
+    background-color: #3D3D3D; 
+     display: flex;
+        justify-content: space-between; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.menu li {
+    position: relative; 
+}
+
+.menu a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #770000; 
+}
+ .menu-left {
+        display: flex;
+        gap: 15px; 
+    }
+
+    .menu-right {
+        display: flex;
+        gap: 15px; 
+    }
+
+.comments h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.comments ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.comments li:last-child {
+    border-bottom: none;
+}
+
+
+.comments li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.comments li p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.comments li small {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.comments li a {
+    font-size: 0.9rem;
+    color: #d9534f;
+    text-decoration: none;
+    margin-left: 10px;
+}
+form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+
+form p {
+    font-size: 0.9rem;
+    margin-top: 12px;
+    color: #555;
+}
+
+form p a:hover {
+    text-decoration: underline;
 }
